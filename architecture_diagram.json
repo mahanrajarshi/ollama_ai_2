@@ -1,0 +1,130 @@
+{
+  "title": "LLM Penetration Testing CLI - System Architecture",
+  "layers": [
+    {
+      "name": "Presentation Layer",
+      "components": [
+        {
+          "name": "CLI Interface",
+          "description": "Command-line interface for user interaction",
+          "functions": [
+            "Argument parsing",
+            "Model selection",
+            "Progress display",
+            "Result output"
+          ]
+        },
+        {
+          "name": "Demo Mode",
+          "description": "Simulated testing without Ollama",
+          "functions": [
+            "Realistic scenarios",
+            "Sample responses",
+            "JSON output demonstration"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Application Layer",
+      "components": [
+        {
+          "name": "LLM Penetration Tester",
+          "description": "Core testing engine",
+          "functions": [
+            "Test orchestration",
+            "Attack generation",
+            "Response analysis",
+            "Evolution logic"
+          ]
+        },
+        {
+          "name": "Attack Pattern Engine",
+          "description": "Sophisticated attack pattern library",
+          "functions": [
+            "20+ attack patterns",
+            "OWASP categorization",
+            "Template generation",
+            "Pattern evolution"
+          ]
+        },
+        {
+          "name": "Result Handler",
+          "description": "Output processing and formatting",
+          "functions": [
+            "JSON formatting",
+            "File output",
+            "Logging",
+            "Summary generation"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Integration Layer",
+      "components": [
+        {
+          "name": "Ollama Client",
+          "description": "API communication with Ollama service",
+          "functions": [
+            "HTTP requests",
+            "Model management",
+            "Error handling",
+            "Timeout management"
+          ]
+        },
+        {
+          "name": "Model Manager",
+          "description": "Manages tester and target models",
+          "functions": [
+            "Model listing",
+            "Connection handling",
+            "Load balancing",
+            "Health checks"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Service Layer",
+      "components": [
+        {
+          "name": "Ollama Service",
+          "description": "Local LLM hosting service",
+          "functions": [
+            "Model hosting",
+            "Inference execution",
+            "Memory management",
+            "API endpoints"
+          ]
+        },
+        {
+          "name": "Tester Model",
+          "description": "Generates attacks and analyzes responses",
+          "functions": [
+            "Attack generation",
+            "Response analysis",
+            "Vulnerability detection",
+            "Strategy evolution"
+          ]
+        },
+        {
+          "name": "Target Model",
+          "description": "Model being tested for vulnerabilities",
+          "functions": [
+            "Response generation",
+            "Vulnerability exhibition",
+            "Safety testing",
+            "Behavior analysis"
+          ]
+        }
+      ]
+    }
+  ],
+  "data_flow": [
+    "CLI \u2192 Penetration Tester \u2192 Attack Pattern Engine \u2192 Attack Generation",
+    "Attack Generation \u2192 Ollama Client \u2192 Target Model \u2192 Response",
+    "Response \u2192 Ollama Client \u2192 Tester Model \u2192 Analysis",
+    "Analysis \u2192 Result Handler \u2192 JSON Output \u2192 CLI Display"
+  ]
+}

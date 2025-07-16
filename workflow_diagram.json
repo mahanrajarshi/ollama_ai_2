@@ -1,0 +1,269 @@
+{
+  "title": "LLM Penetration Testing - Detailed Workflow",
+  "phases": [
+    {
+      "phase": "1. INITIALIZATION",
+      "steps": [
+        {
+          "step": "1.1 Environment Setup",
+          "actions": [
+            "Start Ollama service",
+            "Verify model availability",
+            "Initialize logging"
+          ],
+          "outputs": [
+            "Service status",
+            "Model list",
+            "Log files"
+          ]
+        },
+        {
+          "step": "1.2 Model Configuration",
+          "actions": [
+            "Load tester model",
+            "Load target model",
+            "Validate connections"
+          ],
+          "outputs": [
+            "Model instances",
+            "Connection status",
+            "Configuration validation"
+          ]
+        },
+        {
+          "step": "1.3 Attack Pattern Loading",
+          "actions": [
+            "Load attack patterns",
+            "Initialize OWASP categories",
+            "Setup evolution context"
+          ],
+          "outputs": [
+            "Pattern library",
+            "Category mapping",
+            "Context state"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "2. ATTACK GENERATION",
+      "steps": [
+        {
+          "step": "2.1 Pattern Selection",
+          "actions": [
+            "Select OWASP category",
+            "Choose attack vector",
+            "Load pattern template"
+          ],
+          "outputs": [
+            "Selected category",
+            "Attack vector",
+            "Template"
+          ]
+        },
+        {
+          "step": "2.2 Prompt Generation",
+          "actions": [
+            "Apply context",
+            "Generate attack prompt",
+            "Validate payload"
+          ],
+          "outputs": [
+            "Attack prompt",
+            "Payload validation",
+            "Test metadata"
+          ]
+        },
+        {
+          "step": "2.3 Attack Preparation",
+          "actions": [
+            "Format test structure",
+            "Generate test ID",
+            "Set timestamp"
+          ],
+          "outputs": [
+            "Test structure",
+            "Unique ID",
+            "Timestamp"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "3. ATTACK EXECUTION",
+      "steps": [
+        {
+          "step": "3.1 Payload Delivery",
+          "actions": [
+            "Send prompt to target",
+            "Monitor response time",
+            "Handle timeouts"
+          ],
+          "outputs": [
+            "Target response",
+            "Response time",
+            "Error status"
+          ]
+        },
+        {
+          "step": "3.2 Response Capture",
+          "actions": [
+            "Capture full response",
+            "Extract metadata",
+            "Log interaction"
+          ],
+          "outputs": [
+            "Response text",
+            "Metadata",
+            "Interaction log"
+          ]
+        },
+        {
+          "step": "3.3 Error Handling",
+          "actions": [
+            "Check for errors",
+            "Retry if needed",
+            "Log failures"
+          ],
+          "outputs": [
+            "Error status",
+            "Retry attempts",
+            "Failure logs"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "4. RESPONSE ANALYSIS",
+      "steps": [
+        {
+          "step": "4.1 Vulnerability Detection",
+          "actions": [
+            "Send to tester model",
+            "Analyze response",
+            "Detect indicators"
+          ],
+          "outputs": [
+            "Analysis result",
+            "Vulnerability status",
+            "Indicators"
+          ]
+        },
+        {
+          "step": "4.2 Severity Assessment",
+          "actions": [
+            "Evaluate severity",
+            "Assess impact",
+            "Generate score"
+          ],
+          "outputs": [
+            "Severity level",
+            "Impact assessment",
+            "Risk score"
+          ]
+        },
+        {
+          "step": "4.3 Remediation Guidance",
+          "actions": [
+            "Generate recommendations",
+            "Suggest fixes",
+            "Provide guidance"
+          ],
+          "outputs": [
+            "Remediation steps",
+            "Fix suggestions",
+            "Security guidance"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "5. EVOLUTION & ITERATION",
+      "steps": [
+        {
+          "step": "5.1 Context Update",
+          "actions": [
+            "Update test context",
+            "Store results",
+            "Track patterns"
+          ],
+          "outputs": [
+            "Updated context",
+            "Result storage",
+            "Pattern tracking"
+          ]
+        },
+        {
+          "step": "5.2 Strategy Evolution",
+          "actions": [
+            "Analyze success rate",
+            "Evolve strategy",
+            "Plan next attack"
+          ],
+          "outputs": [
+            "Evolution strategy",
+            "Next attack plan",
+            "Success metrics"
+          ]
+        },
+        {
+          "step": "5.3 Loop Control",
+          "actions": [
+            "Check test limits",
+            "Manage delays",
+            "Control iteration"
+          ],
+          "outputs": [
+            "Loop status",
+            "Delay timing",
+            "Iteration count"
+          ]
+        }
+      ]
+    },
+    {
+      "phase": "6. OUTPUT GENERATION",
+      "steps": [
+        {
+          "step": "6.1 JSON Formatting",
+          "actions": [
+            "Structure JSON",
+            "Validate format",
+            "Add metadata"
+          ],
+          "outputs": [
+            "Structured JSON",
+            "Format validation",
+            "Complete metadata"
+          ]
+        },
+        {
+          "step": "6.2 File Output",
+          "actions": [
+            "Save individual results",
+            "Update logs",
+            "Generate summary"
+          ],
+          "outputs": [
+            "Result files",
+            "Log updates",
+            "Summary report"
+          ]
+        },
+        {
+          "step": "6.3 Display Results",
+          "actions": [
+            "Format for display",
+            "Show progress",
+            "Present summary"
+          ],
+          "outputs": [
+            "Formatted display",
+            "Progress indicators",
+            "Final summary"
+          ]
+        }
+      ]
+    }
+  ]
+}

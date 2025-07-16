@@ -1,0 +1,58 @@
+{
+  "title": "OWASP LLM Top 10 - Implementation Coverage",
+  "categories": [
+    {
+      "code": "LLM01",
+      "name": "Prompt Injection",
+      "description": "Manipulating LLM via crafted inputs",
+      "attack_vectors": [
+        "Authority Impersonation",
+        "DAN (Do Anything Now)",
+        "Hypothetical Scenarios",
+        "Emergency Manipulation",
+        "System Prompt Injection"
+      ],
+      "severity": "High",
+      "implementation_status": "\u2705 Implemented"
+    },
+    {
+      "code": "LLM02",
+      "name": "Insecure Output Handling",
+      "description": "Insufficient validation of LLM outputs",
+      "attack_vectors": [
+        "Script Tag Injection",
+        "Command Injection",
+        "Template Injection",
+        "Data Exfiltration"
+      ],
+      "severity": "High",
+      "implementation_status": "\u2705 Implemented"
+    },
+    {
+      "code": "LLM06",
+      "name": "Sensitive Information Disclosure",
+      "description": "Unintended revelation of sensitive data",
+      "attack_vectors": [
+        "System Prompt Extraction",
+        "Training Data Extraction",
+        "Technical Specification Leakage",
+        "Context Bleeding"
+      ],
+      "severity": "High",
+      "implementation_status": "\u2705 Implemented"
+    },
+    {
+      "code": "LLM04",
+      "name": "Model Denial of Service",
+      "description": "Resource exhaustion attacks",
+      "attack_vectors": [
+        "Resource Exhaustion",
+        "Complex Processing",
+        "Memory Exhaustion",
+        "Output Flooding"
+      ],
+      "severity": "Medium",
+      "implementation_status": "\u2705 Implemented"
+    }
+  ]
+}
