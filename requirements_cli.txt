@@ -1,11 +1,1 @@
-requests==2.31.0
-argparse
-dataclasses
-typing
-enum34
-datetime
-uuid
-json
-time
-logging
-sys
+requests>=2.31.0
